@@ -17,20 +17,20 @@ public class EjemploJava2021 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-         int opcion = 0;
+         char opcion;
         Scanner in = new Scanner (System.in);
         do {
-            System.out.println("Puedes escoger entre opcion 1, 2, 3  o 4 para salir");
-            opcion = in.nextInt();
+            System.out.println("Puedes escoger entre opcion a, b, c  o d para salir");
+            opcion = in.next().charAt(0);
             switch (opcion){
-                case 1:System.out.println("Escogiste opcion 1");break;
-                case 2:System.out.println("Escogiste opcion 2");break;
-                case 3:System.out.println("Escogiste opcion 3");break;
-                case 4:System.out.println("Adios");break;
+                case 'a':System.out.println("Escogiste opcion A");break;
+                case'b':System.out.println("Escogiste opcion B");break;
+                case 'c':System.out.println("Escogiste opcion C");break;
+                case 'd':System.out.println("Adios");break;
                 default:break;
             }
 
-        }while (opcion != 4); // Sigue dando vueltas hasta que le ponemos 4 entonces sale si no no para
+        }while (opcion != 'd'); // Sigue dando vueltas hasta que le ponemos "d" entonces sale si no no para
     }
     
 }
